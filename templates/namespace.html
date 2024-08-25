@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacos 命名空间管理</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='nacos.css') }}">
+</head>
+<body>
+    <section id="app" class="section">
+        <div class="container">
+            <h1 class="title">Nacos 命名空间管理</h1>
+
+            <div class="buttons is-right">
+                <button class="button is-primary" @click="openModal">添加命名空间</button>
+            </div>
+
+            <div v-if="namespaces.length">
+                <h2 class="subtitle">已有命名空间</h2>
+                <table class="table is-fullwidth is-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>显示名称</th>
+                            <th>描述</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="ns in namespaces" :key="ns.namespace">
+                            <td><a @click="navigateToGroups(ns.namespaceShowName)">[[ ns.namespaceShowName ]]</a></td>
+                            <td>[[ ns.namespaceDesc || '无' ]]</td>
+                            <td>
+                                <button class="button is-small is-info" @click="editNamespace(ns)">编辑</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="modal" :class="{ 'is-active': isModalActive }">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">[[ editMode ? '更新' : '添加' ]]命名空间</p>
+                        <button class="delete" aria-label="close" @click="closeModal"></button>
+                    </header>
+                    <section class="modal-card-body">
+                        <div class="field">
+                            <label class="label">命名空间名称</label>
+                            <div class="control">
+                                <label>
+                                    <input class="input" type="text" v-model="namespace.namespaceShowName" placeholder="请输入命名空间名称">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">描述</label>
+                            <div class="control">
+                                <label>
+                                    <textarea class="textarea" v-model="namespace.namespaceDesc" placeholder="请输入命名空间描述"></textarea>
+                                </label>
+                            </div>
+                        </div>
+                    </section>
+                    <footer class="modal-card-foot">
+                        <button class="button is-primary" @click="saveNamespace">[[ editMode ? '更新' : '添加' ]]命名空间</button>
+                        <button class="button" @click="closeModal">取消</button>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.min.js"></script>
+    <script src="{{ url_for('static', filename='namespace.js') }}"></script>
+</body>
+</html>
