@@ -50,7 +50,8 @@ class NacosClient:
         if response.status_code == 200 and response.text == "true":
 
             # 注册观察者并添加监听
-            self.add_listener(namespace_id, group, data_id, self.on_config_update)
+            # self.add_standard_listener(namespace_id, group, data_id, self.on_config_update)
+            self.add_lightweight_listener(namespace_id, group, data_id, self.on_config_update)
 
             return {"message": "Configuration published successfully"}
         else:
@@ -151,41 +152,41 @@ class NacosClient:
             raise Exception(
                 f"Failed to retrieve configuration for dataId {data_id} in group {group}, namespace {namespace_id}: {response.text}")
 
-    def add_listener(self, namespace_id, group, data_id, callback):
-        """
-        添加监听器，当指定的配置发生变动时，调用回调函数。
-        该方法同时处理注册观察者和监听的功能。
-        """
-        key = (namespace_id, group, data_id)
-        if key not in self.listeners:
-            self.listeners[key] = {
-                'callback': callback,
-                'last_md5': None  # 存储最新的配置MD5
-            }
-            threading.Thread(target=self._listener_thread, args=(namespace_id, group, data_id)).start()
-
-    def _listener_thread(self, namespace_id, group, data_id):
-        key = (namespace_id, group, data_id)
-        while True:
-            try:
-                current_config = self.get_config(namespace_id, group, data_id)
-                current_md5 = self._calculate_md5(current_config)
-                # current_md5 = dict(current_config).get('md5')
-                print(f"[DEBUG] Current MD5: {current_md5}, Last MD5: {self.listeners[key]['last_md5']}")
-
-                if self.listeners[key]['last_md5'] is None:
-                    self.listeners[key]['last_md5'] = current_md5
-
-                if self.listeners[key]['last_md5'] != current_md5:
-                    print(f"[DEBUG] Detected change in config for {namespace_id} - {group} - {data_id}")
-                    self.listeners[key]['last_md5'] = current_md5
-                    self.listeners[key]['callback'](namespace_id, group, data_id, current_config)  # 传递必要的参数
-
-                time.sleep(30)  # 定期检查配置是否有变动，间隔30秒
-            except Exception as e:
-                print(f"Error listening to changes: {e}")
-                time.sleep(30)  # 在错误时重试
-
+    # def add_listener(self, namespace_id, group, data_id, callback):
+    #     """
+    #     添加监听器，当指定的配置发生变动时，调用回调函数。
+    #     该方法同时处理注册观察者和监听的功能。
+    #     """
+    #     key = (namespace_id, group, data_id)
+    #     if key not in self.listeners:
+    #         self.listeners[key] = {
+    #             'callback': callback,
+    #             'last_md5': None  # 存储最新的配置MD5
+    #         }
+    #         threading.Thread(target=self._listener_thread, args=(namespace_id, group, data_id)).start()
+    #
+    # def _listener_thread(self, namespace_id, group, data_id):
+    #     key = (namespace_id, group, data_id)
+    #     while True:
+    #         try:
+    #             current_config = self.get_config(namespace_id, group, data_id)
+    #             current_md5 = self._calculate_md5(current_config)
+    #             # current_md5 = dict(current_config).get('md5')
+    #             print(f"[DEBUG] Current MD5: {current_md5}, Last MD5: {self.listeners[key]['last_md5']}")
+    #
+    #             if self.listeners[key]['last_md5'] is None:
+    #                 self.listeners[key]['last_md5'] = current_md5
+    #
+    #             if self.listeners[key]['last_md5'] != current_md5:
+    #                 print(f"[DEBUG] Detected change in config for {namespace_id} - {group} - {data_id}")
+    #                 self.listeners[key]['last_md5'] = current_md5
+    #                 self.listeners[key]['callback'](namespace_id, group, data_id, current_config)  # 传递必要的参数
+    #
+    #             time.sleep(30)  # 定期检查配置是否有变动，间隔30秒
+    #         except Exception as e:
+    #             print(f"Error listening to changes: {e}")
+    #             time.sleep(30)  # 在错误时重试
+    #
     @staticmethod
     def _calculate_md5(content):
         """
@@ -193,3 +194,100 @@ class NacosClient:
         """
         content_str = json.dumps(content, sort_keys=True)  # 将字典转为字符串
         return hashlib.md5(content_str.encode('utf-8')).hexdigest()
+
+    def add_standard_listener(self, namespace_id, group, data_id, callback):
+        """
+        添加标准监听器，通过配置内容变化来检测
+        """
+        key = (namespace_id, group, data_id)
+        if key not in self.listeners:
+            self.listeners[key] = {
+                'callback': callback,
+                'last_md5': None  # 用于存储最后的MD5值
+            }
+            threading.Thread(target=self._standard_listener_thread, args=(namespace_id, group, data_id)).start()
+
+    def add_lightweight_listener(self, namespace_id, group, data_id, callback):
+        """
+        添加轻量级监听器，通过 Nacos 的轻量级 API 来检测变化
+        """
+        key = (namespace_id, group, data_id)
+        if key not in self.listeners:
+            self.listeners[key] = {
+                'callback': callback,
+                'last_md5': None  # 用于存储最后的MD5值
+            }
+            threading.Thread(target=self._lightweight_listener_thread, args=(namespace_id, group, data_id)).start()
+
+    def _standard_listener_thread(self, namespace_id, group, data_id):
+        """
+        标准的监听线程，检测配置内容的变化并触发回调
+        """
+        key = (namespace_id, group, data_id)
+        while True:
+            try:
+                config_data = self.get_config(namespace_id, group, data_id)
+                current_md5 = config_data.get("md5")
+
+                if self.listeners[key]['last_md5'] is None:
+                    self.listeners[key]['last_md5'] = current_md5
+
+                if self.listeners[key]['last_md5'] != current_md5:
+                    print(f"[DEBUG] Detected change in config for {namespace_id} - {group} - {data_id}")
+                    self.listeners[key]['last_md5'] = current_md5
+                    self.listeners[key]['callback'](namespace_id, group, data_id, config_data)
+
+                time.sleep(30)  # 每 30 秒检查一次配置是否有变动
+            except Exception as e:
+                print(f"Error in standard listening thread: {e}")
+                time.sleep(30)  # 在错误时重试
+
+    def _lightweight_listener_thread(self, namespace_id, group, data_id):
+        """
+        轻量级的监听线程，使用 Nacos 的轻量级 API 来检测变化
+        """
+        key = (namespace_id, group, data_id)
+        while True:
+            try:
+                # 使用轻量级API监听变化
+                if self._listen_via_lightweight_api(namespace_id, group, data_id, self.listeners[key]['last_md5']):
+                    print(f"[DEBUG] Detected change in config for {namespace_id} - {group} - {data_id}")
+                    # 更新配置
+                    new_config = self.get_config(namespace_id, group, data_id)
+                    self.listeners[key]['last_md5'] = new_config.get("md5")
+                    # 调用回调函数
+                    self.listeners[key]['callback'](namespace_id, group, data_id, new_config)
+
+                time.sleep(30)  # 每 30 秒检查一次配置是否有变动
+            except Exception as e:
+                print(f"Error in lightweight listening thread: {e}")
+                time.sleep(30)  # 在错误时重试
+
+    def _listen_via_lightweight_api(self, namespace_id, group, data_id, current_md5):
+        """
+        使用轻量级监听 API 来检测配置变化
+        返回值为 True 表示配置已发生变化
+        """
+        url = f"{self.server_address}/nacos/v1/cs/configs/listener"
+        headers = {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Long-Pulling-Timeout": "30000"  # 设置长轮询的超时时间为30秒
+        }
+
+        # 构建 Listening-Configs 参数
+        listening_configs = f"{data_id}%02{group}%02{current_md5 or ''}%02{namespace_id}%01"
+        payload = {
+            "Listening-Configs": listening_configs
+        }
+
+        try:
+            response = requests.post(url, headers=headers, data=payload, auth=self.auth, timeout=35)
+            logger.info(f"Response headers: {response.headers}")
+            logger.info(f"Response content: {response.text}")
+
+            if response.status_code == 200 and response.text.strip():
+                return True  # 检测到配置变化
+        except Exception as e:
+            logger.error(f"Error in lightweight listening API: {e}")
+
+        return False  # 没有检测到配置变化

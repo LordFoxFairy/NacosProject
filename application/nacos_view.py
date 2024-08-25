@@ -140,3 +140,6 @@ def create_or_update_full_config(namespace_id, group, data_id):
         return jsonify(result)
     except Exception as e:
         return jsonify({'error': str(e)}), 500
+
+
+

@@ -2133,3 +2133,152 @@
 2024-08-25 17:33:22,905 - werkzeug - INFO -  * Restarting with stat
 2024-08-25 17:33:24,604 - werkzeug - WARNING -  * Debugger is active!
 2024-08-25 17:33:24,629 - werkzeug - INFO -  * Debugger PIN: 243-480-490
+2024-08-25 18:17:17,161 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-08-25 18:17:17,161 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-08-25 18:17:17,167 - werkzeug - INFO -  * Restarting with stat
+2024-08-25 18:17:19,015 - werkzeug - WARNING -  * Debugger is active!
+2024-08-25 18:17:19,043 - werkzeug - INFO -  * Debugger PIN: 243-480-490
+2024-08-25 18:19:33,060 - werkzeug - INFO -  * Detected change in 'D:\\Users\\14798\\Documents\\JetBrains\\flaskProject\\NacosProject\\application\\nacos_client.py', reloading
+2024-08-25 18:19:33,171 - werkzeug - INFO -  * Restarting with stat
+2024-08-25 18:19:34,966 - werkzeug - WARNING -  * Debugger is active!
+2024-08-25 18:19:34,984 - werkzeug - INFO -  * Debugger PIN: 243-480-490
+2024-08-25 18:19:36,080 - werkzeug - INFO -  * Detected change in 'D:\\Users\\14798\\Documents\\JetBrains\\FlaskProject\\NacosProject\\application\\nacos_client.py', reloading
+2024-08-25 18:19:36,186 - werkzeug - INFO -  * Restarting with stat
+2024-08-25 18:19:37,812 - werkzeug - WARNING -  * Debugger is active!
+2024-08-25 18:19:37,828 - werkzeug - INFO -  * Debugger PIN: 243-480-490
+2024-08-25 18:19:49,134 - werkzeug - INFO -  * Detected change in 'D:\\Users\\14798\\Documents\\JetBrains\\FlaskProject\\NacosProject\\application\\nacos_client.py', reloading
+2024-08-25 18:19:49,216 - werkzeug - INFO -  * Restarting with stat
+2024-08-25 18:19:51,003 - werkzeug - WARNING -  * Debugger is active!
+2024-08-25 18:19:51,019 - werkzeug - INFO -  * Debugger PIN: 243-480-490
+2024-08-25 18:21:47,797 - werkzeug - INFO -  * Detected change in 'D:\\Users\\14798\\Documents\\JetBrains\\FlaskProject\\NacosProject\\application\\nacos_client.py', reloading
+2024-08-25 18:21:47,903 - werkzeug - INFO -  * Restarting with stat
+2024-08-25 18:21:49,813 - werkzeug - WARNING -  * Debugger is active!
+2024-08-25 18:21:49,831 - werkzeug - INFO -  * Debugger PIN: 243-480-490
+2024-08-25 18:21:55,028 - werkzeug - INFO -  * Detected change in 'D:\\Users\\14798\\Documents\\JetBrains\\FlaskProject\\NacosProject\\application\\nacos_client.py', reloading
+2024-08-25 18:21:55,148 - werkzeug - INFO -  * Restarting with stat
+2024-08-25 18:21:56,936 - werkzeug - WARNING -  * Debugger is active!
+2024-08-25 18:21:56,952 - werkzeug - INFO -  * Debugger PIN: 243-480-490
+2024-08-25 18:22:24,625 - werkzeug - INFO -  * Detected change in 'D:\\Users\\14798\\Documents\\JetBrains\\flaskProject\\NacosProject\\application\\nacos_client.py', reloading
+2024-08-25 18:22:24,717 - werkzeug - INFO -  * Restarting with stat
+2024-08-25 18:22:26,513 - werkzeug - WARNING -  * Debugger is active!
+2024-08-25 18:22:26,530 - werkzeug - INFO -  * Debugger PIN: 243-480-490
+2024-08-25 18:23:15,383 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2024 18:23:15] "POST /api/namespaces/new-namespace/groups/DEFAULT_GROUP/data_ids/my-config HTTP/1.1" 200 -
+2024-08-25 18:24:47,543 - werkzeug - INFO -  * Detected change in 'D:\\Users\\14798\\Documents\\JetBrains\\flaskProject\\NacosProject\\application\\nacos_client.py', reloading
+2024-08-25 18:24:47,626 - werkzeug - INFO -  * Restarting with stat
+2024-08-25 18:24:49,349 - werkzeug - WARNING -  * Debugger is active!
+2024-08-25 18:24:49,364 - werkzeug - INFO -  * Debugger PIN: 243-480-490
+2024-08-25 18:24:51,898 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2024 18:24:51] "POST /api/namespaces/new-namespace/groups/DEFAULT_GROUP/data_ids/my-config HTTP/1.1" 200 -
+2024-08-25 18:24:51,931 - application.nacos_client - INFO - <Response [400]>
+2024-08-25 18:25:07,835 - werkzeug - INFO -  * Detected change in 'D:\\Users\\14798\\Documents\\JetBrains\\FlaskProject\\NacosProject\\application\\nacos_client.py', reloading
+2024-08-25 18:25:07,933 - werkzeug - INFO -  * Restarting with stat
+2024-08-25 18:25:09,496 - werkzeug - WARNING -  * Debugger is active!
+2024-08-25 18:25:09,512 - werkzeug - INFO -  * Debugger PIN: 243-480-490
+2024-08-25 18:25:13,826 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2024 18:25:13] "POST /api/namespaces/new-namespace/groups/DEFAULT_GROUP/data_ids/my-config HTTP/1.1" 200 -
+2024-08-25 18:25:13,861 - application.nacos_client - INFO - caused: invalid probeModify;
+2024-08-25 18:25:43,910 - application.nacos_client - INFO - caused: invalid probeModify;
+2024-08-25 18:25:51,549 - werkzeug - INFO -  * Detected change in 'D:\\Users\\14798\\Documents\\JetBrains\\FlaskProject\\NacosProject\\application\\nacos_client.py', reloading
+2024-08-25 18:25:51,612 - werkzeug - INFO -  * Restarting with stat
+2024-08-25 18:25:53,261 - werkzeug - WARNING -  * Debugger is active!
+2024-08-25 18:25:53,280 - werkzeug - INFO -  * Debugger PIN: 243-480-490
+2024-08-25 18:25:59,930 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2024 18:25:59] "POST /api/namespaces/new-namespace/groups/DEFAULT_GROUP/data_ids/my-config HTTP/1.1" 200 -
+2024-08-25 18:25:59,958 - application.nacos_client - INFO - http://192.168.1.110:8848/nacos/v1/cs/configs/listener
+2024-08-25 18:25:59,958 - application.nacos_client - INFO - {'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'Content-Security-Policy': "script-src 'self'", 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '28', 'Date': 'Sun, 25 Aug 2024 10:26:00 GMT', 'Connection': 'close'}
+2024-08-25 18:25:59,958 - application.nacos_client - INFO - caused: invalid probeModify;
+2024-08-25 18:26:30,010 - application.nacos_client - INFO - http://192.168.1.110:8848/nacos/v1/cs/configs/listener
+2024-08-25 18:26:30,010 - application.nacos_client - INFO - {'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'Content-Security-Policy': "script-src 'self'", 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '28', 'Date': 'Sun, 25 Aug 2024 10:26:30 GMT', 'Connection': 'close'}
+2024-08-25 18:26:30,010 - application.nacos_client - INFO - caused: invalid probeModify;
+2024-08-25 18:27:00,073 - application.nacos_client - INFO - http://192.168.1.110:8848/nacos/v1/cs/configs/listener
+2024-08-25 18:27:00,073 - application.nacos_client - INFO - {'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'Content-Security-Policy': "script-src 'self'", 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '28', 'Date': 'Sun, 25 Aug 2024 10:27:00 GMT', 'Connection': 'close'}
+2024-08-25 18:27:00,073 - application.nacos_client - INFO - caused: invalid probeModify;
+2024-08-25 18:27:30,186 - application.nacos_client - INFO - http://192.168.1.110:8848/nacos/v1/cs/configs/listener
+2024-08-25 18:27:30,186 - application.nacos_client - INFO - {'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'Content-Security-Policy': "script-src 'self'", 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '28', 'Date': 'Sun, 25 Aug 2024 10:27:30 GMT', 'Connection': 'close'}
+2024-08-25 18:27:30,187 - application.nacos_client - INFO - caused: invalid probeModify;
+2024-08-25 18:28:00,238 - application.nacos_client - INFO - http://192.168.1.110:8848/nacos/v1/cs/configs/listener
+2024-08-25 18:28:00,238 - application.nacos_client - INFO - {'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'Content-Security-Policy': "script-src 'self'", 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '28', 'Date': 'Sun, 25 Aug 2024 10:28:00 GMT', 'Connection': 'close'}
+2024-08-25 18:28:00,238 - application.nacos_client - INFO - caused: invalid probeModify;
+2024-08-25 18:28:30,289 - application.nacos_client - INFO - http://192.168.1.110:8848/nacos/v1/cs/configs/listener
+2024-08-25 18:28:30,289 - application.nacos_client - INFO - {'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'Content-Security-Policy': "script-src 'self'", 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '28', 'Date': 'Sun, 25 Aug 2024 10:28:30 GMT', 'Connection': 'close'}
+2024-08-25 18:28:30,290 - application.nacos_client - INFO - caused: invalid probeModify;
+2024-08-25 18:29:00,330 - application.nacos_client - INFO - http://192.168.1.110:8848/nacos/v1/cs/configs/listener
+2024-08-25 18:29:00,331 - application.nacos_client - INFO - {'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'Content-Security-Policy': "script-src 'self'", 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '28', 'Date': 'Sun, 25 Aug 2024 10:29:00 GMT', 'Connection': 'close'}
+2024-08-25 18:29:00,331 - application.nacos_client - INFO - caused: invalid probeModify;
+2024-08-25 18:29:30,392 - application.nacos_client - INFO - http://192.168.1.110:8848/nacos/v1/cs/configs/listener
+2024-08-25 18:29:30,392 - application.nacos_client - INFO - {'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'Content-Security-Policy': "script-src 'self'", 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '28', 'Date': 'Sun, 25 Aug 2024 10:29:30 GMT', 'Connection': 'close'}
+2024-08-25 18:29:30,392 - application.nacos_client - INFO - caused: invalid probeModify;
+2024-08-25 18:30:00,441 - application.nacos_client - INFO - http://192.168.1.110:8848/nacos/v1/cs/configs/listener
+2024-08-25 18:30:00,441 - application.nacos_client - INFO - {'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'Content-Security-Policy': "script-src 'self'", 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '28', 'Date': 'Sun, 25 Aug 2024 10:30:00 GMT', 'Connection': 'close'}
+2024-08-25 18:30:00,441 - application.nacos_client - INFO - caused: invalid probeModify;
+2024-08-25 18:30:30,491 - application.nacos_client - INFO - http://192.168.1.110:8848/nacos/v1/cs/configs/listener
+2024-08-25 18:30:30,491 - application.nacos_client - INFO - {'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'Content-Security-Policy': "script-src 'self'", 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '28', 'Date': 'Sun, 25 Aug 2024 10:30:30 GMT', 'Connection': 'close'}
+2024-08-25 18:30:30,491 - application.nacos_client - INFO - caused: invalid probeModify;
+2024-08-25 18:30:32,807 - werkzeug - INFO -  * Detected change in 'D:\\Users\\14798\\Documents\\JetBrains\\flaskProject\\NacosProject\\application\\nacos_client.py', reloading
+2024-08-25 18:30:32,937 - werkzeug - INFO -  * Restarting with stat
+2024-08-25 18:30:34,588 - werkzeug - WARNING -  * Debugger is active!
+2024-08-25 18:30:34,606 - werkzeug - INFO -  * Debugger PIN: 243-480-490
+2024-08-25 18:30:38,742 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2024 18:30:38] "POST /api/namespaces/new-namespace/groups/DEFAULT_GROUP/data_ids/my-config HTTP/1.1" 200 -
+2024-08-25 18:30:57,183 - werkzeug - INFO -  * Detected change in 'D:\\Users\\14798\\Documents\\JetBrains\\flaskProject\\NacosProject\\application\\nacos_client.py', reloading
+2024-08-25 18:30:57,287 - werkzeug - INFO -  * Restarting with stat
+2024-08-25 18:30:58,872 - werkzeug - WARNING -  * Debugger is active!
+2024-08-25 18:30:58,886 - werkzeug - INFO -  * Debugger PIN: 243-480-490
+2024-08-25 18:31:00,882 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2024 18:31:00] "POST /api/namespaces/new-namespace/groups/DEFAULT_GROUP/data_ids/my-config HTTP/1.1" 200 -
+2024-08-25 18:31:00,913 - application.nacos_client - INFO - Response headers: {'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'Content-Security-Policy': "script-src 'self'", 'Probe-Modify-Response': 'my-config:DEFAULT_GROUP;', 'Probe-Modify-Response-New': 'my-config%02DEFAULT_GROUP%02new-namespace%01', 'Pragma': 'no-cache', 'Expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'Cache-Control': 'no-cache,no-store', 'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '0', 'Date': 'Sun, 25 Aug 2024 10:31:00 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+2024-08-25 18:31:25,530 - werkzeug - INFO -  * Detected change in 'D:\\Users\\14798\\Documents\\JetBrains\\flaskProject\\NacosProject\\application\\nacos_client.py', reloading
+2024-08-25 18:31:25,626 - werkzeug - INFO -  * Restarting with stat
+2024-08-25 18:31:27,161 - werkzeug - WARNING -  * Debugger is active!
+2024-08-25 18:31:27,176 - werkzeug - INFO -  * Debugger PIN: 243-480-490
+2024-08-25 18:31:29,067 - application.nacos_client - INFO - Requesting config with URL: http://192.168.1.110:8848/nacos/v1/cs/configs
+2024-08-25 18:31:29,068 - application.nacos_client - INFO - Request parameters: {'dataId': 'my-config', 'group': 'DEFAULT_GROUP', 'tenant': 'new-namespace', 'show': 'all'}
+2024-08-25 18:31:29,131 - application.nacos_client - INFO - Response status code: 200
+2024-08-25 18:31:29,131 - application.nacos_client - INFO - Response content: {"id":"801496925252628480","dataId":"my-config","group":"DEFAULT_GROUP","content":"key1=value1\\nkey2=value2","md5":"4c69d23ccc744c88235853b6c922b61e","encryptedDataKey":"","tenant":"new-namespace","appName":"","type":"yaml","createTime":1724581861030,"modifyTime":1724581861030,"createUser":null,"createIp":"192.168.1.101","desc":"Test description","use":null,"effect":null,"schema":null,"configTags":null}
+2024-08-25 18:31:29,132 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2024 18:31:29] "GET /api/namespaces/new-namespace/groups/DEFAULT_GROUP/data_ids/my-config HTTP/1.1" 200 -
+2024-08-25 18:31:31,708 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2024 18:31:31] "POST /api/namespaces/new-namespace/groups/DEFAULT_GROUP/data_ids/my-config HTTP/1.1" 200 -
+2024-08-25 18:31:31,750 - application.nacos_client - INFO - Response headers: {'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'Content-Security-Policy': "script-src 'self'", 'Probe-Modify-Response': 'my-config:DEFAULT_GROUP;', 'Probe-Modify-Response-New': 'my-config%02DEFAULT_GROUP%02new-namespace%01', 'Pragma': 'no-cache', 'Expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'Cache-Control': 'no-cache,no-store', 'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '0', 'Date': 'Sun, 25 Aug 2024 10:31:31 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+2024-08-25 18:31:31,750 - application.nacos_client - INFO - Response headers: 
+2024-08-25 18:32:01,810 - application.nacos_client - INFO - Response headers: {'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'Content-Security-Policy': "script-src 'self'", 'Probe-Modify-Response': 'my-config:DEFAULT_GROUP;', 'Probe-Modify-Response-New': 'my-config%02DEFAULT_GROUP%02new-namespace%01', 'Pragma': 'no-cache', 'Expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'Cache-Control': 'no-cache,no-store', 'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '0', 'Date': 'Sun, 25 Aug 2024 10:32:01 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+2024-08-25 18:32:01,810 - application.nacos_client - INFO - Response headers: 
+2024-08-25 18:32:31,857 - application.nacos_client - INFO - Response headers: {'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'Content-Security-Policy': "script-src 'self'", 'Probe-Modify-Response': 'my-config:DEFAULT_GROUP;', 'Probe-Modify-Response-New': 'my-config%02DEFAULT_GROUP%02new-namespace%01', 'Pragma': 'no-cache', 'Expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'Cache-Control': 'no-cache,no-store', 'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '0', 'Date': 'Sun, 25 Aug 2024 10:32:32 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+2024-08-25 18:32:31,857 - application.nacos_client - INFO - Response headers: 
+2024-08-25 18:33:01,911 - application.nacos_client - INFO - Response headers: {'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'Content-Security-Policy': "script-src 'self'", 'Probe-Modify-Response': 'my-config:DEFAULT_GROUP;', 'Probe-Modify-Response-New': 'my-config%02DEFAULT_GROUP%02new-namespace%01', 'Pragma': 'no-cache', 'Expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'Cache-Control': 'no-cache,no-store', 'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '0', 'Date': 'Sun, 25 Aug 2024 10:33:02 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+2024-08-25 18:33:01,911 - application.nacos_client - INFO - Response headers: 
+2024-08-25 18:33:31,970 - application.nacos_client - INFO - Response headers: {'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'Content-Security-Policy': "script-src 'self'", 'Probe-Modify-Response': 'my-config:DEFAULT_GROUP;', 'Probe-Modify-Response-New': 'my-config%02DEFAULT_GROUP%02new-namespace%01', 'Pragma': 'no-cache', 'Expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'Cache-Control': 'no-cache,no-store', 'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '0', 'Date': 'Sun, 25 Aug 2024 10:33:32 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+2024-08-25 18:33:31,970 - application.nacos_client - INFO - Response headers: 
+2024-08-25 18:34:02,016 - application.nacos_client - INFO - Response headers: {'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'Content-Security-Policy': "script-src 'self'", 'Probe-Modify-Response': 'my-config:DEFAULT_GROUP;', 'Probe-Modify-Response-New': 'my-config%02DEFAULT_GROUP%02new-namespace%01', 'Pragma': 'no-cache', 'Expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'Cache-Control': 'no-cache,no-store', 'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '0', 'Date': 'Sun, 25 Aug 2024 10:34:02 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+2024-08-25 18:34:02,016 - application.nacos_client - INFO - Response headers: 
+2024-08-25 18:34:32,080 - application.nacos_client - INFO - Response headers: {'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'Content-Security-Policy': "script-src 'self'", 'Probe-Modify-Response': 'my-config:DEFAULT_GROUP;', 'Probe-Modify-Response-New': 'my-config%02DEFAULT_GROUP%02new-namespace%01', 'Pragma': 'no-cache', 'Expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'Cache-Control': 'no-cache,no-store', 'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '0', 'Date': 'Sun, 25 Aug 2024 10:34:32 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+2024-08-25 18:34:32,080 - application.nacos_client - INFO - Response headers: 
+2024-08-25 18:35:02,129 - application.nacos_client - INFO - Response headers: {'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'Content-Security-Policy': "script-src 'self'", 'Probe-Modify-Response': 'my-config:DEFAULT_GROUP;', 'Probe-Modify-Response-New': 'my-config%02DEFAULT_GROUP%02new-namespace%01', 'Pragma': 'no-cache', 'Expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'Cache-Control': 'no-cache,no-store', 'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '0', 'Date': 'Sun, 25 Aug 2024 10:35:02 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+2024-08-25 18:35:02,129 - application.nacos_client - INFO - Response headers: 
+2024-08-25 18:35:24,459 - werkzeug - INFO -  * Detected change in 'D:\\Users\\14798\\Documents\\JetBrains\\flaskProject\\NacosProject\\application\\nacos_client.py', reloading
+2024-08-25 18:35:24,576 - werkzeug - INFO -  * Restarting with stat
+2024-08-25 18:35:26,450 - werkzeug - WARNING -  * Debugger is active!
+2024-08-25 18:35:26,472 - werkzeug - INFO -  * Debugger PIN: 243-480-490
+2024-08-25 18:39:33,833 - werkzeug - INFO -  * Detected change in 'D:\\Users\\14798\\Documents\\JetBrains\\FlaskProject\\NacosProject\\application\\nacos_client.py', reloading
+2024-08-25 18:39:33,911 - werkzeug - INFO -  * Restarting with stat
+2024-08-25 18:39:35,527 - werkzeug - WARNING -  * Debugger is active!
+2024-08-25 18:39:35,541 - werkzeug - INFO -  * Debugger PIN: 243-480-490
+2024-08-25 18:40:07,258 - werkzeug - INFO -  * Detected change in 'D:\\Users\\14798\\Documents\\JetBrains\\flaskProject\\NacosProject\\application\\nacos_client.py', reloading
+2024-08-25 18:40:07,325 - werkzeug - INFO -  * Restarting with stat
+2024-08-25 18:40:08,951 - werkzeug - WARNING -  * Debugger is active!
+2024-08-25 18:40:08,966 - werkzeug - INFO -  * Debugger PIN: 243-480-490
+2024-08-25 18:40:53,026 - werkzeug - INFO -  * Detected change in 'D:\\Users\\14798\\Documents\\JetBrains\\FlaskProject\\NacosProject\\application\\nacos_client.py', reloading
+2024-08-25 18:40:53,101 - werkzeug - INFO -  * Restarting with stat
+2024-08-25 18:40:54,803 - werkzeug - WARNING -  * Debugger is active!
+2024-08-25 18:40:54,818 - werkzeug - INFO -  * Debugger PIN: 243-480-490
+2024-08-25 18:41:11,219 - werkzeug - INFO -  * Detected change in 'D:\\Users\\14798\\Documents\\JetBrains\\flaskProject\\NacosProject\\application\\nacos_client.py', reloading
+2024-08-25 18:41:11,308 - werkzeug - INFO -  * Restarting with stat
+2024-08-25 18:41:13,056 - werkzeug - WARNING -  * Debugger is active!
+2024-08-25 18:41:13,073 - werkzeug - INFO -  * Debugger PIN: 243-480-490
+2024-08-25 18:41:30,503 - werkzeug - INFO -  * Detected change in 'D:\\Users\\14798\\Documents\\JetBrains\\flaskProject\\NacosProject\\application\\nacos_client.py', reloading
+2024-08-25 18:41:30,584 - werkzeug - INFO -  * Restarting with stat
+2024-08-25 18:41:31,954 - werkzeug - WARNING -  * Debugger is active!
+2024-08-25 18:41:31,969 - werkzeug - INFO -  * Debugger PIN: 243-480-490
+2024-08-25 18:41:32,119 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2024 18:41:32] "POST /api/namespaces/new-namespace/groups/DEFAULT_GROUP/data_ids/my-config HTTP/1.1" 200 -
+2024-08-25 18:41:32,152 - application.nacos_client - INFO - Response headers: {'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'Content-Security-Policy': "script-src 'self'", 'Pragma': 'no-cache', 'Expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'Cache-Control': 'no-cache,no-store', 'Content-Type': 'application/json;charset=UTF-8', 'Content-Length': '45', 'Date': 'Sun, 25 Aug 2024 10:41:32 GMT', 'Keep-Alive': 'timeout=60', 'Connection': 'keep-alive'}
+2024-08-25 18:41:32,152 - application.nacos_client - INFO - Response content: my-config%02DEFAULT_GROUP%02new-namespace%01
+
+2024-08-25 18:41:32,153 - application.nacos_client - INFO - Requesting config with URL: http://192.168.1.110:8848/nacos/v1/cs/configs
+2024-08-25 18:41:32,153 - application.nacos_client - INFO - Request parameters: {'dataId': 'my-config', 'group': 'DEFAULT_GROUP', 'tenant': 'new-namespace', 'show': 'all'}
+2024-08-25 18:41:32,203 - application.nacos_client - INFO - Response status code: 200
+2024-08-25 18:41:32,203 - application.nacos_client - INFO - Response content: {"id":"801496925252628480","dataId":"my-config","group":"DEFAULT_GROUP","content":"key1=value1\\nkey2=value2","md5":"4c69d23ccc744c88235853b6c922b61e","encryptedDataKey":"","tenant":"new-namespace","appName":"","type":"yaml","createTime":1724582492266,"modifyTime":1724582492266,"createUser":null,"createIp":"192.168.1.101","desc":"Test description","use":null,"effect":null,"schema":null,"configTags":null}
+2024-08-25 18:41:32,203 - application.nacos_client - INFO - Config updated for new-namespace - DEFAULT_GROUP - my-config: {'id': '801496925252628480', 'dataId': 'my-config', 'group': 'DEFAULT_GROUP', 'content': 'key1=value1\\nkey2=value2', 'md5': '4c69d23ccc744c88235853b6c922b61e', 'encryptedDataKey': '', 'tenant': 'new-namespace', 'appName': '', 'type': 'yaml', 'createTime': 1724582492266, 'modifyTime': 1724582492266, 'createUser': None, 'createIp': '192.168.1.101', 'desc': 'Test description', 'use': None, 'effect': None, 'schema': None, 'configTags': None}
